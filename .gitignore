@@ -1,0 +1,9 @@
+node_modules/
+dist/
+releases/*
+!releases/Lume.html
+!releases/Lume-portatil.zip
+test-results/
+playwright-report/
+*.log
+*.tsbuildinfo

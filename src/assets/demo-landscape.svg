@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 1440 1000">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#b5cfca"/><stop offset=".58" stop-color="#e4dfbb"/><stop offset="1" stop-color="#9ab5a1"/></linearGradient>
+ <linearGradient id="water" x2=".15" y2="1"><stop stop-color="#738f7f"/><stop offset=".5" stop-color="#426c61"/><stop offset="1" stop-color="#183e3d"/></linearGradient>
+ <linearGradient id="mount" x2=".8" y2="1"><stop stop-color="#c4c9b7"/><stop offset="1" stop-color="#6d9283"/></linearGradient>
+ <linearGradient id="near" x2=".4" y2="1"><stop stop-color="#425f56"/><stop offset="1" stop-color="#153f38"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#fff7cc" stop-opacity=".65"/><stop offset="1" stop-color="#fff7cc" stop-opacity="0"/></radialGradient>
+ <filter id="mist"><feGaussianBlur stdDeviation="18"/></filter>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".045"/></feComponentTransfer><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+ <g id="pine"><path d="M0-105-20-65h11l-22 31h15L-39 2H39L16-34h15L9-65h11z" fill="currentColor"/><path d="M-3-5H3V16H-3z" fill="currentColor"/></g>
+</defs>
+<g filter="url(#grain)">
+<path fill="url(#sky)" d="M0 0h1440v1000H0z"/>
+<ellipse cx="970" cy="230" rx="470" ry="350" fill="url(#glow)"/>
+<circle cx="1000" cy="200" r="52" fill="#fff3c5" opacity=".8"/>
+<path d="M0 476 154 344 225 379 451 96 505 155 541 141 710 374 796 304 866 328 1000 147 1061 235 1096 216 1240 351 1325 304 1440 384V650H0z" fill="url(#mount)"/>
+<path d="m451 96-51 184 49-34 30 22-10-73 72 61-36-101-26-25zm549 51-52 143 40-33 28 36 7-68 38 10z" fill="#ecebd5" opacity=".65"/>
+<path d="m0 492 183-40 118 41 189-106 85 36 114-56 97 108 172-58 102 78 144-14 117-71 119 25v312H0z" fill="#7f9c87"/>
+<path d="M0 540Q260 500 515 545T1000 530 1440 550V1000H0z" fill="url(#water)"/>
+<path d="M167 563h870M414 584h775M60 635h450m300 0h500M300 725h720M20 812h470m350-15h430m-1020 95h700" stroke="#bdc7a5" stroke-width="2" opacity=".14"/>
+<path d="M0 295 71 370 118 357 172 432 233 462 288 538 393 557 260 597 0 682z" fill="url(#near)"/>
+<path d="M1440 277 1383 324 1333 358 1307 412 1240 438 1225 491 1122 548 1036 564 1165 605 1440 685z" fill="url(#near)"/>
+<g color="#224c3f"><use href="#pine" transform="translate(53 424) scale(1.6)"/><use href="#pine" transform="translate(110 450) scale(1.3)"/><use href="#pine" transform="translate(178 510) scale(1.4)"/><use href="#pine" transform="translate(223 536) scale(.9)"/><use href="#pine" transform="translate(280 551) scale(.6)"/><use href="#pine" transform="translate(1360 450) scale(1.6)"/><use href="#pine" transform="translate(1409 455) scale(2)"/><use href="#pine" transform="translate(1310 505) scale(1.3)"/><use href="#pine" transform="translate(1251 530) scale(.9)"/><use href="#pine" transform="translate(1198 550) scale(.65)"/></g>
+<path d="M152 543q400-29 1160 4" fill="none" stroke="#f8eed0" stroke-width="34" opacity=".2" filter="url(#mist)"/>
+<path d="M0 927q310-150 637 73H0zM1440 833q-200 40-420 167h420z" fill="#123c34"/>
+<g color="#123a32"><use href="#pine" transform="translate(1380 889) scale(3.3)"/><use href="#pine" transform="translate(1294 940) scale(2.8)"/><use href="#pine" transform="translate(62 1005) scale(3.8)"/></g>
+</g></svg>
